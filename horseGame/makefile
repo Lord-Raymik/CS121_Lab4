@@ -1,6 +1,7 @@
 CC=g++
 CFLAGS= -g -Wall
-game: main.o
+
+horseGame: main.o
 	$(CC) $(CFLAGS) main.o -o game
 
 main.o: main.cpp
