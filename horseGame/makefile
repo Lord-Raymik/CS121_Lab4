@@ -19,3 +19,6 @@ clean:
 
 run: horseGame
 	./horseGame
+
+debug: horseGame
+	gdb horseGame
