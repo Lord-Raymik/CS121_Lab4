@@ -3,6 +3,7 @@
 
 //the header files
 #include "horse.h"
+#include "race.h"
 
 
 int main() {
