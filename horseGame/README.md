@@ -75,5 +75,5 @@ classDiagram
     call race.start() to begin the game
     return 0
 
-## <center> Notes About Creation
+## Notes About Creation
 The constants for Race had to be set in the header file, as due to NUM_HORSES being used to define the size of the horses array, it would cause a compile error (I'm not sure if this is what I was supposed to do originally or if i just did something wrong, hoping the former).
