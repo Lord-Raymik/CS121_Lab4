@@ -3,11 +3,6 @@
 #include "race.h"
 
 
-const int Race::TRACK_LENGTH = 15;
-const int Race::NUM_HORSES = 7;
-Horse horses[NUM_HORSES];
-
-
 Race::Race() {
 	for (int num = 0; num < Race::NUM_HORSES; num++) {
 		Race::horses[num].init(num, Race::TRACK_LENGTH);
@@ -15,8 +10,14 @@ Race::Race() {
 } //end constructor
 
 void Race::start() {
+	//printing the initial start of the race
+	for (int i = 0; i < Race::NUM_HORSES; i++) {
+		Race::horses[i].printLane();
+	} //end for loop
+	std::cin.ignore();
+	//the main loop of the race
 	bool keepGoing = true;
-	while (keepGoing = true) {
+	while (keepGoing == true) {
 		for (int horseNum = 0; horseNum < Race::NUM_HORSES; horseNum++) {
 			Race::horses[horseNum].advance();
 			Race::horses[horseNum].printLane();

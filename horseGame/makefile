@@ -2,7 +2,7 @@ CC=g++
 CFLAGS= -g -Wall
 
 horseGame: horse.o race.o main.o
-	$(CC) $(CFLAGS) horse.o main.o -o horseGame
+	$(CC) $(CFLAGS) horse.o race.o main.o -o horseGame
 
 horse.o: horse.cpp horse.h
 	$(CC) $(CFLAGS) -c horse.cpp

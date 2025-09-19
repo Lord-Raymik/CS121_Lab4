@@ -32,8 +32,11 @@ classDiagram
 
 ### Race()
     Create and initialize the Race object
-    initialize each horse in the horses array
+    loop through each horse in the horses array and do the following
+        initialize each horse
 ### start()
+    loop through each horse in horses and do the following
+        have each horse print it's lane to display the beginning state of the race, before any movement has occured
     while keepGoing is true
         for NUM_HORSES times with horseNum as the control variable
             call advance on horses[horseNum]
@@ -71,3 +74,6 @@ classDiagram
     call Race() to construct the race object
     call race.start() to begin the game
     return 0
+
+## <center> Notes About Creation
+The constants for Race had to be set in the header file, as due to NUM_HORSES being used to define the size of the horses array, it would cause a compile error (I'm not sure if this is what I was supposed to do originally or if i just did something wrong, hoping the former).
